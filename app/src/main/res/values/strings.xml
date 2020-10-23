@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Antique Pavbhaji Hub</string>
+    <string name="antique_pavbhaji">Antique Pavbhaji</string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="login_here">LogIn Here!</string>
+    <string name="title_activity_dashboard">dashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Antique Pavbhaji</string>
+    <string name="nav_header_subtitle">Welcome Manish</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_additem">Add Item</string>
+    <string name="menu_updateitem">Update Item</string>
+    <string name="menu_deleteitem">Delete Item</string>
+    <string name="new_padding_order">New Pending Order</string>
+    <string name="total_completed_order">Total Completed Order</string>
+    <string name="total_customer">Total Customer</string>
+    <string name="total_earnings">Total Earnings</string>
+    <string name="add_items">Add Items</string>
+    <string name="category">Category</string>
+    <string name="item_name">Item Name</string>
+    <string name="description">Description</string>
+    <string name="type_here">"Type Here Description.... "</string>
+
+    <string-array name="Category">
+        <item>Pavbhaji</item>
+        <item>Pulav</item>
+        <item>Masala Pav</item>
+    </string-array>
+</resources>

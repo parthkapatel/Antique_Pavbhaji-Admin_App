@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mncard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="30dp"
+            app:cardBackgroundColor="#03A9F4"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fncard"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="7dp"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lblpedding"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/bell_mt"
+                            android:gravity="center|center_vertical"
+                            android:padding="10dp"
+                            android:text="@string/new_padding_order"
+                            android:textColor="#663300"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/totlblpedd"
+                            android:layout_width="190dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/bell_mt"
+                            android:gravity="center|start|center_vertical"
+                            android:text="10000000"
+                            android:textColor="#663300"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sncard"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="7dp"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lblcom"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/bell_mt"
+                            android:gravity="center|center_vertical"
+                            android:padding="10dp"
+                            android:text="@string/total_completed_order"
+                            android:textColor="#663300"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/totlblcom"
+                            android:layout_width="190dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/bell_mt"
+                            android:gravity="center|start"
+                            android:text="10000000"
+                            android:textColor="#663300"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/thrdcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="7dp"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lblcust"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/bell_mt"
+                            android:gravity="center|center_vertical"
+                            android:padding="10dp"
+                            android:text="@string/total_customer"
+                            android:textColor="#663300"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/totlblcust"
+                            android:layout_width="190dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/bell_mt"
+                            android:gravity="center|start"
+                            android:text="10000000"
+                            android:textColor="#663300"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/frthcard"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lblearn"
+                            android:layout_width="170dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/bell_mt"
+                            android:gravity="center|center_vertical"
+                            android:padding="10dp"
+                            android:text="@string/total_earnings"
+                            android:textColor="#663300"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/totlblearn"
+                            android:layout_width="190dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/bell_mt"
+                            android:gravity="center|start"
+                            android:text="10000000"
+                            android:textColor="#663300"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- <androidx.cardview.widget.CardView
+            android:id="@+id/fifthcard"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="7dp"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lblout"
+                    android:layout_width="170dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/out_of_stock_products"
+                    android:textColor="#663300"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totlblout"
+                    android:layout_width="190dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|start"
+                    android:text="10000000"
+                    android:textColor="#663300"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/sixthcard"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lblearn"
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|center_vertical"
+                        android:padding="10dp"
+                        android:text="@string/total_earning"
+                        android:textColor="#663300"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/totlblearn"
+                        android:layout_width="190dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center|start"
+                        android:text="10000000"
+                        android:textColor="#663300"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>-->
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboard">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#03A9F4"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_notifications"
+        tools:ignore="VectorDrawableCompat" />
+
+    <com.nex3z.notificationbadge.NotificationBadge
+        android:id="@+id/counterbadge"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="-16dp"
+        android:layout_marginTop="-8dp"
+        android:background="@drawable/badge_with_shadow"
+        android:visibility="invisible"
+        app:layout_anchor="@+id/fab"
+        app:layout_anchorGravity="top|end"
+        app:maxTextLength="3"></com.nex3z.notificationbadge.NotificationBadge>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
